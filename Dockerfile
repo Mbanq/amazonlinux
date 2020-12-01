@@ -1,3 +1,3 @@
-FROM flyway/flyway:6.2.2
+FROM amazonlinux:latest
 
 MAINTAINER Mbanq <dev@mbanq.com>
