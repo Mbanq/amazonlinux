@@ -14,8 +14,9 @@ RUN set -eux; \
     jq \
     file \
     git \
-    openssh-client; \
-    pip install -q awscli; \
+    openssh-client \
+    python-psycopg2; \
+    pip install -q awscli boto3; \
     curl -sL https://rpm.nodesource.com/setup_14.x | bash -;\
     amazon-linux-extras install epel -y; \
     amazon-linux-extras enable python3.8; \
