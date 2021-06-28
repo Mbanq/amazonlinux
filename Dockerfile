@@ -24,5 +24,5 @@ RUN set -eux; \
         python3.8 \
         nodejs \
         ansible; \
-    ansible-galaxy collection install community.aws; \
+    ansible-galaxy collection install community.aws amazon.aws; \
     yum clean all && rm -rf /var/cache/yum
