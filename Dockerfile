@@ -21,7 +21,8 @@ RUN set -eux; \
     amazon-linux-extras install epel -y; \
     amazon-linux-extras enable python3.8; \
     yum install -q -y \
-    python3.8 \
-    nodejs \
-    ansible; \
+        python3.8 \
+        nodejs \
+        ansible; \
+    ansible-galaxy collection install community.aws; \
     yum clean all && rm -rf /var/cache/yum
